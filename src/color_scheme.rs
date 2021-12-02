@@ -1,5 +1,7 @@
 pub mod grayscale;
 pub mod rainbow;
+pub mod purple;
+pub mod blue;
 
 pub trait ColorScheme {
     // intensity [0..63]

@@ -1,5 +1,7 @@
 use crate::{
-    color_scheme::{grayscale::Grayscale, rainbow::Rainbow, ColorScheme},
+    color_scheme::{grayscale::Grayscale, rainbow::Rainbow, ColorScheme, purple::Purple,
+        blue::Blue
+    },
     fractal::{checkerboard::Checkerboard, mandelbrot::Mandelbrot, Fractal},
     render::render_fractal,
 };
@@ -56,6 +58,8 @@ impl App {
         };
         app.color_schemes.push_back(Box::new(Rainbow));
         app.color_schemes.push_back(Box::new(Grayscale));
+        app.color_schemes.push_back(Box::new(Purple));
+        app.color_schemes.push_back(Box::new(Blue));
         app.fractals.push_back(Box::new(Mandelbrot));
         app.fractals.push_back(Box::new(Checkerboard));
         app
